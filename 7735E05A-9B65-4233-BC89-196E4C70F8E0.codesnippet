@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createRepository</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+import Commons_APPIMA
+import MitosisRest
+import aarqRest
+import aarqIntegration
+import MitosisBase
+
+private enum Endpoints {
+    static let Endpoint = ""
+}
+
+private enum Errors {
+    static let ParseError = "Error decoding Decodable"
+}
+
+private enum Parameters {
+    static let param = ""
+}
+
+// Dentro del método
+let errorClosure = { (error: ImaginServiceError?) -&gt; Void in
+    let error = COMESTError.serviceError(msg: error?.dictionaryRepresentation())
+    completion(.failure(error))
+}
+
+let successClosure = { (serviceResponse: ServiceResult?) -&gt; Void in
+    guard let model = serviceResponse?.data as? ShopSimulacionResponseDecodable else {
+        let error = COMESTError.serviceError(msg: ["COMEST" : Errors.ParseError])
+        completion(.failure(error))
+        return
+    }
+    completion(.success(model))
+}
+
+guard let command = ServiceCommand&lt;AnyObject&gt;(nil, success: successClosure, failure: errorClosure) else {
+    let error = COMESTError.serviceError(msg: ["COMEST" : Errors.ParseError])
+    completion(.failure(error))
+    return
+}
+
+var parameters: [String: Any] = [:]
+parameters[Parameters.param] = params.param
+
+ImaginApiDataSource.getDataFromPOSTConnectionWithAction(
+    methodName: Endpoints.Endpoint,
+    headers: nil,
+    parameters: parameters,
+    command: command,
+    outputClass: Decodable())</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7735E05A-9B65-4233-BC89-196E4C70F8E0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createRepository</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

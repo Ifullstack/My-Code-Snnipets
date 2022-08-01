@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createUseCase</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+
+protocol UseCase {
+    func execute(params:UseCaseParameters, completion: @escaping(Result&lt;Entity, Error&gt;) -&gt; Void)
+}
+
+class Default: UseCase {
+    
+    private let repository: Repository
+    
+    init(repository: Repository = Default() ) {
+        self.repository = repository
+    }
+    
+    func execute(params: UseCaseParameters, completion: @escaping (Result&lt;Entity, Error&gt;) -&gt; Void) {
+        
+        let params: RepositoryParameters = RepositoryParameters()
+        
+        let completion: (Result&lt;Decodable, Error&gt;) -&gt; Void = { result in
+            switch result {
+                case .failure(let error):
+                    completion(.failure(error))
+                case .success(let decodable):
+                    completion(.success(Entity(decodable: decodable)))
+            }
+        }
+        
+        // Make the call pasing the params and completion
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>79F85C08-AA61-4976-AD49-23B0D0F124F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createUseCase</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

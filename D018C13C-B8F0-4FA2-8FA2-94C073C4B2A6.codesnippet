@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createScrollViewConstraints</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private enum Margins {
+        static let zero: CGFloat = 0
+        static let defaultMarginTop: CGFloat = 16
+        static let defaultMarginLeft: CGFloat = 20
+}
+    
+func setupScrollViewConstraints() {
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor,constant: Margins.zero),
+            scrollView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor,constant: Margins.zero),
+            scrollView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor,constant: Margins.zero),
+            scrollView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor,constant: Margins.zero),
+            scrollView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor)
+        ])
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D018C13C-B8F0-4FA2-8FA2-94C073C4B2A6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createScrollViewConstraints</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createCodeDocumentation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// Run the request to authorize a purchase.
+/// - Parameters:
+///   - params: ConfirmOTPSMSCodeUseCaseParameters
+///   - completion: A completion block with a ShopAuthorizationResultEntity if it is successful or an Error if it fails.
+///# Dependencies: #
+///# Data: #
+///  - 
+///# Domain: #
+///  - 
+///# Presentation: #
+///  - 
+///# Notes: #
+///Use the response returned by an endpoint called:  "utilPrestamos/compraEstrella/constitucion/autorizacion/resultado"</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0FF4D9DF-7E26-47A4-A17A-ACAA32FDE28B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createCodeDocumentation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

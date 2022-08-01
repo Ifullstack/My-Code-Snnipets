@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createBaseTestsForRepos</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func testAltaProductRepositorySuccess() {
+    // Arrange - Given
+    
+    // Act - When
+    let expt = self.expectation(description: "When the result has been success I cant cast the ShopAltaPedidoResponseDecodable")
+    
+    wait(for: [expt], timeout: 10)
+}
+    
+    
+func testAltaProductRepositoryFailure() {
+    // Arrange - Given
+    
+    // Act - When
+    let expt = self.expectation(description: "When the result has been success I cant cast the ShopAltaPedidoResponseDecodable")
+    
+    wait(for: [expt], timeout: 10)
+}
+
+    
+func testAltaProductRepositoryFailureCast() {
+    // Arrange - Given
+    
+    // Act - When
+    let expt = self.expectation(description: "When the result has been success I cant cast the ShopAltaPedidoResponseDecodable")
+    
+    wait(for: [expt], timeout: 10)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B10A77F1-7CD9-4583-83C9-04E5CF3645D9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createBaseTestsForRepos</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

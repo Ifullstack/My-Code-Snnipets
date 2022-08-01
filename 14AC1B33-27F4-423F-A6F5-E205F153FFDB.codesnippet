@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>localCafePartComest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>pod 'APPIMA_PART', :path =&gt; '../PART'
+pod 'APPIMA_CAFE', :path =&gt; '../CAFE'
+pod 'APPIMA_MGM', :path =&gt; '../MGM'
+pod 'APPIMA_SEGUROS', :path =&gt; '../SEGUROS'
+pod 'APPIMA_COMEST', :path =&gt; '../COMEST'
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14AC1B33-27F4-423F-A6F5-E205F153FFDB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Ruby</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>localCafePartComest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

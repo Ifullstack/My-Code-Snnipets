@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createScrollViewConstraints</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSLayoutConstraint.activate([
+    scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+    scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+    scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+    scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+    scrollView.widthAnchor.constraint(equalTo: view.widthAnchor),
+    scrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+    scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+])</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>38D3BB41-C472-402F-A23F-F3BAD6061A5E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createScrollViewConstraints</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
